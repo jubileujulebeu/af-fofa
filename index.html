@@ -45,10 +45,10 @@
 
 <h4 style="font-family: Arial;">Vamos supor que eu queira namorar com você, aceitaria?</h4>
 <input type="checkbox" id="checkboxSim" onchange="mostrarResultado(this)">
-<label for="checkboxSim">Sim</label>
+<h4 for="checkboxSim">Sim</h4>
 
 <input type="checkbox" id="checkboxNao" onchange="mostrarResultado(this)">
-<label for="checkboxNao">Não</label>
+<h4 for="checkboxNao">Não</h4>
 
 <p id="texto"></p>
 
@@ -58,19 +58,4 @@
     var checkboxNao = document.getElementById("checkboxNao");
     var texto = document.getElementById("texto");
 
-    if (checkbox.checked) {
-      if (checkbox === checkboxSim) {
-        checkboxNao.checked = false;
-        texto.innerHTML = 'Vira pra mim e diz a senha: <span style="color: #8a2be2;">2205</span>';
-      } else if (checkbox === checkboxNao) {
-        checkboxSim.checked = false;
-        texto.innerHTML = "Poxa, então aí não posso fazer absolutamente nada";
-      }
-    } else {
-      texto.innerHTML = "";
-    }
-  }
-</script>
-</div>
-</body>
-</html>
+

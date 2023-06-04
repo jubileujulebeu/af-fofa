@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>af, fofa</title>
+  <style>
+    body {
+        background-image: url("https://i.pinimg.com/originals/d8/a1/ec/d8a1eca53bc328496e46f180153568bb.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial;
+      }
+    .center {
+      text-align: center;
+    }
+    h1 {
+      color: #8a2be2;
+      font-size: 30px;
+    }
+    p {
+      font-size: 22px;
+    }
+    a {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Oi, ju💜</h1>
+  <p>Imagine isso como um jogo, espero que goste!</p>
+  <figure>
+    <img src="https://i.pinimg.com/236x/8a/64/3c/8a643c942dcfb4809d44aaeaabba3617.jpg" alt="nós">
+    <figcaption>nós</figcaption>
+    </figure>
+    <h4 style="font-family: Arial;">Bom, não é surpresa nenhuma que eu gosto de você né, é meio óbvio, e como eu já te falei, eu gostaria de ser oficialmente sua namorada, </p> mas para uma garota tão incrível como você não poderia ser qualquer coisa né, então aqui está o melhor (e espero que único) </p>pedido de namoro da sua vida, até pq a imagem abaixo diz tudo:</h4>
+    <img src="https://i.pinimg.com/originals/c0/b0/77/c0b077b7c055fb6b2b7e603fd06b0392.jpg" >
+    <P>
+        <img src="https://cdn-icons-png.flaticon.com/512/5198/5198472.png" width="200" height="150"> 
+        
+    </P>
+    <img src="https://i.pinimg.com/originals/b8/1f/18/b81f18920b9ae4d7670d3d3c8891c753.jpg" >
+
+  <p><a href="https://open.spotify.com/playlist/6emnWt7nlNc9Jlxd5gXu3Y?si=5S5j0_6iQpmh9Wnjggj0ag&utm_source=copy-link">Clique aqui primeiro</a></p>
+
+<h4 style="font-family: Arial;">Vamos supor que eu queira namorar com você, aceitaria?</h4>
+<input type="checkbox" id="checkboxSim" onchange="mostrarResultado(this)">
+<label for="checkboxSim">Sim</label>
+
+<input type="checkbox" id="checkboxNao" onchange="mostrarResultado(this)">
+<label for="checkboxNao">Não</label>
+
+<p id="texto"></p>
+
+<script>
+  function mostrarResultado(checkbox) {
+    var checkboxSim = document.getElementById("checkboxSim");
+    var checkboxNao = document.getElementById("checkboxNao");
+    var texto = document.getElementById("texto");
+
+    if (checkbox.checked) {
+      if (checkbox === checkboxSim) {
+        checkboxNao.checked = false;
+        texto.innerHTML = 'Vira pra mim e diz a senha: <span style="color: #8a2be2;">2205</span>';
+      } else if (checkbox === checkboxNao) {
+        checkboxSim.checked = false;
+        texto.innerHTML = "Poxa, então aí não posso fazer absolutamente nada";
+      }
+    } else {
+      texto.innerHTML = "";
+    }
+  }
+</script>
+</div>
+</body>
+</html>

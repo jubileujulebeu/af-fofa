@@ -57,5 +57,23 @@
     var checkboxSim = document.getElementById("checkboxSim");
     var checkboxNao = document.getElementById("checkboxNao");
     var texto = document.getElementById("texto");
+    
+
+    if (checkbox.checked) {
+      if (checkbox === checkboxSim) {
+        checkboxNao.checked = false;
+        texto.innerHTML = 'Vira pra mim e diz a senha: <span style="color: #8a2be2;">2205</span>';
+      } else if (checkbox === checkboxNao) {
+        checkboxSim.checked = false;
+        texto.innerHTML = "Poxa, então aí não posso fazer absolutamente nada";
+      }
+    } else {
+      texto.innerHTML = "";
+    }
+  }
+</script>
+</div>
+</body>
+</html>
 
 

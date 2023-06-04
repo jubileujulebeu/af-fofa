@@ -44,9 +44,9 @@
   <p><a href="https://open.spotify.com/playlist/01e7DjwYPiMJSR7u0NEzp6?si=2YCq6ywsQCSC83MpcLrl8Q&utm_source=copy-link">Clique aqui primeiro</a></p>
 
 <h4 style="font-family: Arial;">Vamos supor que eu queira namorar com você, aceitaria?</h4>
-  
-<h4 >Sim< for="checkboxSim" /h4>
+<h4 for="checkboxSim">Sim</h4>
 <input type="checkbox" id="checkboxSim" onchange="mostrarResultado(this)">
+
 
 <h4 for="checkboxNao">Não</h4>
 <input type="checkbox" id="checkboxNao" onchange="mostrarResultado(this)">
@@ -58,6 +58,7 @@
     var checkboxSim = document.getElementById("checkboxSim");
     var checkboxNao = document.getElementById("checkboxNao");
     var texto = document.getElementById("texto");
+    
 
     if (checkbox.checked) {
       if (checkbox === checkboxSim) {
